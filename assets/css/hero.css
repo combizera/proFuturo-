@@ -1,0 +1,68 @@
+.hero {
+  height: 100vh;
+}
+
+.bg-hero {
+  background-image: url("./../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-top {
+  background-color: #66139c;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-left {
+  background-color: #66139c;
+  height: 100%;
+  position: absolute;
+  width: 40px;
+  left: 0;
+  top: 0;
+}
+
+.bg-bottom {
+  background-color: #66139c;
+  height: 40px;
+  position: absolute;
+  width: 60%;
+  left: 0;
+  bottom: 0;
+}
+
+.hero-cont {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  line-height: 44px !important;
+  color: #1a1a1a;
+  padding-top: 4rem;
+}
+
+label {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 130%;
+
+  color: #736f6f;
+  display: block;
+  padding: 20px 0 40px 0;
+}
