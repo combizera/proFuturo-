@@ -37,14 +37,26 @@
   bottom: 0;
 }
 
+.logo {
+  margin: 1px;
+}
+
 .hero-cont {
-  padding-top: 50px;
   padding-left: 50px;
+  position: relative;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
+}
+
+.hero-capsula {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  height: 100vh;
 }
 
 h1 {
@@ -56,13 +68,154 @@ h1 {
   padding-top: 4rem;
 }
 
+form {
+  position: relative;
+}
+
 label {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 130%;
 
-  color: #736f6f;
+  color: #999;
   display: block;
   padding: 20px 0 40px 0;
+}
+
+input {
+  color: #999;
+  padding: 1rem;
+  width: 55%;
+  border: 1px solid #ccc;
+  /* background-color: #ccc; */
+}
+
+input::placeholder {
+  font-size: 1.125rem !important;
+  color: #999;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #66139c;
+  box-shadow: 0 0 0 2px #65139c94;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+
+  color: #fff;
+  background: linear-gradient(267.07deg, #0ac8d4 0%, #0a7fd4 99.54%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0 4px 4px 0;
+  border: none;
+  padding: 0.87rem 2rem;
+  position: absolute;
+  right: 0.5px;
+  bottom: 0.5px;
+}
+
+.hero-data {
+  background: linear-gradient(90deg, #660099 0%, #840099 100%);
+  padding: 12px 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.125rem;
+  line-height: 130%;
+
+  color: #fff;
+  height: 40px;
+}
+
+.hero-data p {
+  display: inline-flex;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .bg-hero {
+    background-image: url("./../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .bg-top {
+    height: 10px;
+  }
+
+  .bg-left {
+    width: 10px;
+  }
+
+  .hero-cont {
+    padding: 50px 20px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    position: relative;
+  }
+
+  label {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 130%;
+
+    color: #747475;
+    display: block;
+    padding: 20px 0 40px 0;
+  }
+
+  input {
+    color: #535252;
+    padding: 1rem;
+    width: 99.8%;
+    display: block;
+    border: 1px solid #ccc;
+  }
+
+  input::placeholder {
+    font-size: 1.125rem !important;
+    color: #cbc6ce;
+  }
+
+  input:focus {
+    outline: none;
+    border: 2px solid #66139c;
+    box-shadow: 0 0 0 2px #65139c94;
+  }
+
+  button {
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+    background: linear-gradient(267.07deg, #0ac8d4 0%, #0a7fd4 99.54%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 4px 4px 0;
+    border: none;
+    padding: 0.87rem 2rem;
+    position: inherit;
+    right: 0.5px;
+    bottom: 0.5px;
+  }
 }
